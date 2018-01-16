@@ -1,6 +1,6 @@
 <?php
 
-require 'inc/angular-enqueue.php';
+require 'lib/walker.php';
 
 
 class wp_squatch_theme {
@@ -66,7 +66,7 @@ class wp_squatch_theme {
 
 }
 
-$wpSquatchtheme = new wp_squatch_theme();
-$wpSquatchtheme->init();
+$wpsquatchtheme = new wp_squatch_theme();
+$wpsquatchtheme->init();
 
 ?>
