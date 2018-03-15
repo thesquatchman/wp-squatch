@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-		<main id="main" class="" role="main">
+		<main id="main" class="col row-sm just-between-md contained" role="main">
 		<?php 
 		if ( have_posts() ) : 
 			// Start the loop.
@@ -24,6 +24,11 @@
 	
 		endif; 
 		?>
+		<?php if ( is_active_sidebar( 'sidebar' ) ) { ?>
+				<aside id="sidebar" class="md4 pad">
+					<?php dynamic_sidebar( 'sidebar' ); ?>
+				</aside>
+			<?php } ?>
 		</main>
-		<?php get_sidebar('sidebar'); ?>
+		
 <?php get_footer(); ?>

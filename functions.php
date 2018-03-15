@@ -19,13 +19,13 @@ class wp_squatch_theme {
 	/* Enqueue CSS and JS files and dependencies */
 	function wp_squatch_scripts() {
 		
-		wp_enqueue_script( 'wp-squatch-scripts', get_template_directory_uri().'/src/js/squatch.min.js', array( 'jquery' ), null, false );
+		wp_enqueue_script( 'wp-squatch-scripts', get_template_directory_uri().'/public/js/wpsquatch.min.js', array( 'jquery' ), null, false );
 		
 	}
 
 	function wp_squatch_styles() {
 		
-		wp_enqueue_style( 'wp-squatch-styles', get_template_directory_uri().'/src/css/squatch.min.css', array(), null, 'all' );
+		wp_enqueue_style( 'wp-squatch-styles', get_template_directory_uri().'/public/css/wpsquatch.min.css', array(), null, 'all' );
 		
 	}
 	
@@ -56,8 +56,6 @@ class wp_squatch_theme {
 		register_sidebar(array(
 			'name' 			=> 'Sidebar',
 			'id' 			=> 'sidebar',
-			'before_widget' => '<aside>',
-			'after_widget' 	=> '</aside>',
 			'before_title' 	=> '<h4>',
 			'after_title' 	=> '</h4>'
 		));

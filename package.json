@@ -1,6 +1,8 @@
 {
   "name": "wp-squatch",
-  "dependencies": {},
+  "dependencies": {
+    "squatch": "^1.0.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",

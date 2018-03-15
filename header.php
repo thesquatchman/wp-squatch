@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/src/img/apple-touch-icon.png">
+      <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/public/img/apple-touch-icon.png">
 			<?php wp_head(); ?>
       
   </head>

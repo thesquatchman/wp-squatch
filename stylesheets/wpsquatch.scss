@@ -1,0 +1,200 @@
+// // --------------------------------------------------
+// // Colors
+// // --------------------------------------------------
+// // these variable names can be changed to your color scheme
+
+// $colors: (
+// 	grey: #2C3E50,
+// 	red: #E74C3C,
+// 	off-white: #ECF0F1,
+// 	light-blue: #3498DB,
+// 	blue: #2980B9
+// 	) ;
+// $gray: (
+// 	20: #000000,
+// 	19: #080808,
+// 	18: #181818,
+// 	17: #282828,
+// 	16: #383838,
+// 	15: #404040,
+// 	14: #505050,
+// 	13: #585858,
+// 	12: #606060,
+// 	11: #707070,
+// 	10: #808080,
+// 	9: #909090,
+// 	8: #A0A0A0,
+// 	7: #B0B0B0,
+// 	6: #C0C0C0,
+// 	5: #D0D0D0,
+// 	3: #E0E0E0,
+// 	2: #E8E8E8,
+// 	1: #F8F8F8,
+// 	0: #FFFFFF
+// ) ;
+
+// // used throughout styles
+// $color-primary: 			color(light-blue) 			;
+// $accent-primary:			color(blue)							;
+// $color-secondary: 		color(red) 							;
+// $accent-secondary:		lighten($color-secondary, 10%) 			;
+// //grayscale
+// $base-gray:				#555 												;
+// $light-gray:			lighten($base-gray, 20%)		;
+// $lighter-gray:		lighten($base-gray, 40%)		;
+// $dark-gray:				darken($base-gray, 20%)			;
+// $darker-gray:			darken($base-gray, 40%)			;
+
+// // --------------------------------------------------
+// // Fonts
+// // --------------------------------------------------
+// $font-san-serif: 		'Roboto', Hevetica, Arial, san-serif ;
+// $font-serif:				'Roboto Slab', Georgia, 'Times New Roman', Times,  serif ;
+// $font-alt: 					'Roboto Condensed', Hevetica, Arial, san-serif ;
+// $font-size-mobile: 		14px ; // smaller body font size on extra small screens
+// $font-size-desktop:		16px ;
+// $font-size-base: 			1em  ;
+
+// // --------------------------------------------------
+// // Responsive Grid & breakpoints
+// // --------------------------------------------------
+// $breakpoint-unit: 'px';
+// $breakpoints: (
+//     sm : 480,
+//     md : 768,
+//     lg : 1024,
+// );
+// $breakpoint-navbar: 768 ;
+
+// $gutter-width:					($font-size-base * 2)  ;
+// $content-max-width:			120rem	  	 ;
+// $grid-columns:					12 					  				 ;
+// //adds and alternate grid with more columns to allow more complex layouts,
+// $grid-columns-ext:			15 					   				 ;
+// $gutter-width-ext:			($font-size-base * 1)  ;
+
+// // --------------------------------------------------
+// // Default Styles
+// // --------------------------------------------------
+// $font-family-base: 		$font-san-serif  ;
+// $line-height-base: 		1.5 						 ;
+// $font-weight-base: 		300 						 ;
+// $text-color: 					#666 						 ;
+// $body-bg: 						color(off-white) ;
+// $link-color: 					$color-primary 		 ;
+// $link-hover-color: 		$accent-primary 					 ;
+// $hr-color: 						$text-color 		 ;
+
+// // --------------------------------------------------
+// // Type
+// // --------------------------------------------------
+// $headings-font-family: 		$font-alt ;
+// $headings-font-weight: 		400 			;
+// $headings-line-height: 		1.4 			;
+// $headings-color: 					inherit 			;
+// $headings-small-color: 		#333 			;
+// $base-line-height: 				1.5em			;
+
+// $h1-font-size: 					4.25em	 			;
+// $h1-line: 							0.352941176em	;
+// $h1-lines: 							3						 	;
+// $h1-line-height: $h1-line * $h1-lines ;
+// $h1-margin-top: 				2 * $h1-line  ;
+// $h1-margin-bottom: 			1 * $h1-line  ;
+
+// $h2-font-size: 					2.625em 			;
+// $h2-line: 							0.571428571em ;
+// $h2-lines: 							2						  ;
+// $h2-line-height: $h2-line * $h2-lines ;
+// $h2-margin-top: 				2 * $h2-line  ;
+// $h2-margin-bottom: 			1 * $h2-line  ;
+
+// $h3-font-size: 					1.625em 			;
+// $h3-line: 							0.923076923em ;
+// $h3-lines: 							2 						;
+// $h3-line-height: $h3-line * $h3-lines ;
+// $h3-margin-top: 				1 * $h3-line  ;
+// $h3-margin-bottom:			1 * $h3-line  ;
+
+// $h4-font-size: 					1em					  ;
+// $h4-line: 							1.5em				  ;
+// $h4-lines: 							1						  ;
+// $h4-line-height: $h4-line * $h4-lines ;
+// $h4-margin-top: 				1 * $h4-line 	;
+// $h4-margin-bottom: 			1 * $h4-line	;
+// $blockquote-font-size: 	1.5em 				;
+// $blockquote-color: 					#666 			;
+// $blockquote-footer-color: 	#333		  ;
+
+// // --------------------------------------------------
+// // Navs
+// // --------------------------------------------------
+// $nav-link-color:			$link-color			 		;
+// $nav-link-bg:					none						 		;
+// $nav-hover-color:			$link-hover-color 	;
+// $nav-hover-bg:				none		 						;
+// $nav-link-padding-v: 	0.25em							;
+// $nav-link-padding-h:	0.5em								;
+
+// // --------------------------------------------------
+// // Navbar
+// // --------------------------------------------------
+// $navbar-color:						color(off-white)			;
+// $navbar-bg:								color(grey)						;
+// // link styles
+// $navbar-link-color:				$navbar-color			 		;
+// $navbar-link-bg:					none		 							;
+// //logo style
+// $brand-font-family: 			$font-alt 						;
+// $brand-font-weight: 			$font-weight-base 		;
+// $brand-font-size:					$font-size-base 			;
+// // navbar link styles
+// $navbar-font-family: 			$font-alt 						;
+// $navbar-font-weight: 			$font-weight-base			;
+// $navbar-link-padding-v: 	1em										;
+// $navbar-link-padding-h:		1em										;
+// $carat-width:							0.25em									;
+// // link hover color
+// $navbar-hover-color:			#FFF	 								;
+// $navbar-hover-bg:			  	$color-secondary			;
+// // current page link color
+// $navbar-active-color:			$navbar-hover-color		;
+// $navbar-active-bg:				$navbar-hover-bg 			;
+// // hamburger nav icon
+// $navbar-toggle-color:			$navbar-link-color		;
+// $navbar-toggle-bg:				$navbar-link-bg	 			;
+// $navbar-toggle-border:		none			 						;
+
+// // --------------------------------------------------
+// // Dropdown menu
+// // --------------------------------------------------
+// $dropdown-color:					$navbar-color	 					;
+// $dropdown-bg:							$navbar-bg		 					;
+// // dropdown link styles
+// $dropdown-link-color:			$navbar-link-color 			;
+// $dropdown-link-bg:				$navbar-link-bg					;
+// $dropdown-link-padding-v:	$navbar-link-padding-v	;
+// $dropdown-link-padding-h:	$navbar-link-padding-h	;
+// // dropdown hover color
+// $dropdown-hover-color:		$navbar-hover-color			;
+// $dropdown-hover-bg:				$navbar-hover-bg				;
+// // drop down current page
+// $dropdown-active-color:		$navbar-active-color		;
+// $dropdown-active-bg:			$navbar-active-bg	 			;
+
+// // --------------------------------------------------
+// // Components
+// // --------------------------------------------------
+// $btn-color:						#FFF		 															;
+// $btn-bg:							$color-primary 												;
+// $btn-border:					1px solid	darken($btn-bg, 10%)				;
+// $btn-hover-color:			#FFF		 															;
+// $btn-hover-bg:				darken($btn-bg, 10%) 									;
+// $btn-hover-border:		1px solid	darken($color-primary, 10%)	;
+// $btn-padding-v:				0.5em	 																;
+// $btn-padding-h:				1em 																	;
+// $btn-border-radius:		3px																		;
+// $btn-font-family:			$font-family-base 										;
+// $btn-font-weight:			$headings-font-weight 								;
+
+@import '../node_modules/squatch/stylesheets/import';

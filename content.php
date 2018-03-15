@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('contained'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pad'); ?>>
 	<?php
 		// Post thumbnail.
 		the_post_thumbnail();
@@ -59,7 +59,7 @@
 
 
 	<footer class="entry-footer">
-		<?php wp-squatch_entry_meta(); ?>
+		<?php do_action( 'wp_squatch_entry_meta'); ?>
 		<?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
 		<?php edit_post_link( __( 'Edit', 'wp-squatch' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
